@@ -38,11 +38,68 @@ This project is an **AI-powered coding assistant** built using **Streamlit**, **
 | Docker      | Container runtime for Newman          |
 | Python      | Backend logic + Streamlit integration |
 
----
 
-## 🚀 Getting Started
+⸻
 
-### 1. Install Dependencies
+
+## ⚙️ Setup Commands
+
+### 🔧 1. Install Required Python Packages
 
 ```bash
 pip install streamlit httpx
+
+
+⸻
+
+🚀 2. Start the Ollama Model Server
+
+ollama run codellama
+
+⚠️ Keep this running in a separate terminal.
+This starts the local API server at http://localhost:11434.
+
+⸻
+
+🐳 3. Pull the Postman Newman Docker Image
+
+docker pull postman/newman
+
+Used for API testing via collection.json
+
+⸻
+
+💻 4. Run the FastAPI App (Optional - If Code Uses FastAPI)
+
+uvicorn main:app --reload
+
+Replace main with the filename containing your generated code (e.g., main.py).
+
+⸻
+
+🌐 5. Run the Streamlit App
+
+streamlit run app.py
+
+This launches the full AI assistant and API testing interface in your browser.
+
+⸻
+
+🧪 Usage Flow
+	1.	Enter a natural language prompt like:
+
+Create a FastAPI with CRUD operations for products.
+
+
+	2.	The AI will:
+	•	Generate real-time FastAPI code.
+	•	Extract endpoints like GET /products, POST /products, etc.
+	3.	You can:
+	•	Edit any endpoint inline.
+	•	Enter headers & request body as JSON.
+	•	Click Test API Collection.
+	4.	Newman (in Docker) will:
+	•	Test the endpoints live.
+	•	Show success/fail status and logs right inside the app.
+
+⸻
