@@ -1,4 +1,4 @@
-# vexalance# 🤖 AI Coding Assistant with API Testing (Streamlit + Ollama + Postman )
+# vexalance# 🤖 AI Coding Assistant with API Testing (Streamlit + Ollama + Postman 
 
 This project is an **AI-powered coding assistant** built using **Streamlit**, **Ollama**, and **Postman (Newman)** to help developers generate backend APIs, edit them, and test them — all in one unified interface.
 
