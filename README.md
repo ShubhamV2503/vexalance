@@ -4,7 +4,7 @@ This project is an **AI-powered coding assistant** built using **Streamlit**, **
 
 ---
 
-## 🔥 Features
+## 🔥 Featuress
 
 ### 🧠 AI Code Assistant
 - Powered by [Ollama](https://ollama.com/) and local models like `codellama`.
